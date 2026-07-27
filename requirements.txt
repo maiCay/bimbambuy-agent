@@ -1,0 +1,10 @@
+langchain
+langchain-google-genai
+langchain-community
+langgraph
+faiss-cpu
+pypdf
+pandas
+gradio==6.20.0
+python-dotenv
+grandalf
