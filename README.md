@@ -116,6 +116,48 @@ En la primera ejecución, el sistema:
 
 Las siguientes ejecuciones cargan el índice pre-computado.
 
+## Ejemplos de preguntas y respuestas
+
+| Pregunta | Categoría |
+|---|---|
+| ¿Cuánto tarda el envío a Buenos Aires? | Envíos |
+| ¿Puedo pagar con Mercado Pago? | Pagos |
+| ¿Cuánto dura la garantía? | Garantía |
+| ¿Qué productos tienen? | Productos |
+| ¿Cómo me afilio? | Afiliados |
+
+### Ejemplo 1: Envíos
+
+**Pregunta:** ¿Cuánto tarda el envío a Buenos Aires?
+
+**Categoría detectada:** Envíos
+
+**Respuesta:** Los tiempos de entrega estimados una vez que el pedido es despachado son:
+- **Zonas urbanas principales:** 2 a 5 días hábiles
+- **Zonas secundarias:** 4 a 8 días hábiles
+- **Zonas de cobertura extendida:** 6 a 12 días hábiles
+
+Adicionalmente, los tiempos de preparación del pedido antes de su envío son:
+- **Validación de pago:** 0 a 1 día hábil
+- **Alistamiento y empaque:** 1 a 2 días hábiles
+- **Despacho al operador logístico:** 1 día hábil adicional
+
+### Ejemplo 2: Pagos
+
+**Pregunta:** ¿Puedo pagar con Mercado Pago?
+
+**Categoría detectada:** Pagos
+
+**Respuesta:** En BimBam Buy aceptamos billeteras digitales disponibles por país (además de tarjetas de crédito y débito, transferencias bancarias, pagos en efectivo en puntos habilitados y financiamiento). Te sugerimos revisar directamente el checkout al momento de realizar tu compra; si la opción no aparece allí, significa que no está habilitada para ese pedido.
+
+### Ejemplo 3: Garantía
+
+**Pregunta:** ¿Cuánto dura la garantía?
+
+**Categoría detectada:** Garantía
+
+**Respuesta:** El plazo de la garantía puede variar según el tipo de producto, la categoría y el país. El plazo específico aplicable para tu caso será el que se encuentre informado en la ficha del producto o en tu confirmación de compra. En caso de que exista alguna diferencia entre los documentos, siempre prevalecerá la información específica del producto y la normativa local aplicable.
+
 ## Estructura del proyecto
 
 ```
@@ -154,3 +196,11 @@ Las siguientes ejecuciones cargan el índice pre-computado.
 | Variable | Descripción | Obtener en |
 |---|---|---|
 | `GEMINI_API_KEY` | API key de Google Gemini | [Google AI Studio](https://aistudio.google.com/apikey) |
+
+## Deploy
+
+**URL:** [https://bimbambuy-agent.onrender.com](https://bimbambuy-agent.onrender.com/)
+
+![Screenshot de la app](BimBamBuy-Agent.png)
+
+Deployado en [Render](https://render.com) (Free Tier).
